@@ -1,0 +1,8 @@
+<h1>This is our Task List!</h1>
+
+<p>
+    <% @list.each do |eachlist| %>
+    Title: <%= eachlist.id %><br>
+    Description: <%= eachlist.title %><br><br>
+    <% end %>
+</p>
