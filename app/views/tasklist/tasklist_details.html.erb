@@ -5,6 +5,8 @@
     <%@tasks.each do |task|%>
     <a href="/task-details/<%=task.id%>/<%=@tasklist_id%>" >Task: <%= task.title%> <br></a>
     <%end%>
+    <br>
+    <a href="/display-tasklist">Click here to go back to the Main Lists of Tasklist</a>
 </h2>
 
 

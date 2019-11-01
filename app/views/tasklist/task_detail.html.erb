@@ -1,6 +1,8 @@
 <h2>
     Title: <%= @title%><br>
     Description: <%= @description%><br>
-    Date/Time Created: <%= @date_time_create%> <br>
-    Belongs to Tasklist Number: <%=@tasklist_id%>
+    Date/Time Created: <%= @date_time_create%> <br><br>
+    <a href="/tasklist-details/<%=@tasklist_id%>%"> Click here to go back to the Tasklist <%=@tasklist_id%></a> <br><br>
+    <a href="/display-tasklist">Click here to go back to the Main Lists of Tasklist</a>
+
 </h2>
