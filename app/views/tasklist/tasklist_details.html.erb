@@ -2,7 +2,9 @@
 <h2>
     Title: <%= @title%><br>
     Description: <%= @description%><br>
-    <%= Date.today.beginning_of_day%><br>
+    <%@tasks.each do |task|%>
+    <a href="/task-details/<%=task.id%>/<%=@tasklist_id%>" >Task: <%= task.title%> <br></a>
+    <%end%>
 </h2>
 
 
