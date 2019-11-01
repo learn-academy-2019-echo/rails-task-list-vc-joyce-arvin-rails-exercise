@@ -1,14 +1,14 @@
 class TasklistController < ApplicationController
     def display_tasklist
         @task_lists = TaskList.all
-        @task_list_third = TaskList.find_by(title: "TaskList 2")
         render "tasklist.html.erb"
     end
 
     def tasklist_details
         @id = params[:id].to_i
-        @tasklist_detail = TaskList.find @id
+        @tasklist_detail = TaskList.find_by(id: @id)
         @title = @tasklist_detail.title
+        @description = @tasklist_detail.description
         render "tasklist_details.html.erb"
     end
 end

@@ -1,7 +1,9 @@
 <h1>This is our Task List!</h1>
 
-<h2> 
-    <%= @task_list_third.title%>
+
+<h2>
+    <% @task_lists.each do |eachlist| %>
+    <a href="/tasklist-details/<%=eachlist.id.to_i%>" >Title: <%= eachlist.title %><br> </a>
+    <%# Description: <%= eachlist.description <br> %>
+    <% end %>
 </h2>
-
-
